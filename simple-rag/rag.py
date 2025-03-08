@@ -55,7 +55,8 @@ class ChatPDF:
     def ask(self, query: str):
         if not self.vector_store:
             self.vector_store = Chroma(
-                persist_directory="chroma_db", embedding=FastEmbedEmbeddings()
+                persist_directory="chroma_db",
+                embedding_function=FastEmbedEmbeddings()
             )
 
         self.retriever = self.vector_store.as_retriever(

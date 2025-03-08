@@ -58,7 +58,7 @@ def read_and_save_file():
 def page():
     if len(st.session_state) == 0:
         st.session_state["messages"] = []
-        st.session_state["assistant"] = ChatPDF()
+        st.session_state["assistant"] = ChatPDF(llm_model="llama3.2")
 
     st.header("ChatPDF")
 
