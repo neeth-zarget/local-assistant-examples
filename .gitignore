@@ -321,3 +321,8 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 /simple-rag/chroma_db
+/simple-rag/chroma_books_db
+/simple-rag/chroma_pdf_db
+/simple-rag/chroma_qa_db
+/simple-rag/data
+.DS_Store
